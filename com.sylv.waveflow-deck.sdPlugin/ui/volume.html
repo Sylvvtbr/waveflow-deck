@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head lang="pt-BR">
+	<meta charset="utf-8" />
+	<script src="sdpi-components.js"></script>
+</head>
+<body>
+	<sdpi-item label="Ação">
+		<sdpi-select setting="direction" default="up">
+			<option value="up">Aumentar volume</option>
+			<option value="down">Diminuir volume</option>
+		</sdpi-select>
+	</sdpi-item>
+	<sdpi-item label="Passo (%)">
+		<sdpi-range setting="step" min="1" max="50" step="1" default="5" showlabels></sdpi-range>
+	</sdpi-item>
+	<sdpi-item label="Endereço (IP)">
+		<sdpi-textfield setting="host" global placeholder="ex.: 192.168.0.10"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Porta">
+		<sdpi-textfield setting="port" global placeholder="6600"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Senha">
+		<sdpi-password setting="password" global></sdpi-password>
+	</sdpi-item>
+</body>
+</html>

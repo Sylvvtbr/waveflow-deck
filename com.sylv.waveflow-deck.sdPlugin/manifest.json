@@ -1,0 +1,93 @@
+{
+	"Name": "Waveflow Deck",
+	"Version": "0.1.0.0",
+	"Author": "Sylv",
+	"Actions": [
+		{
+			"Name": "Play / Pause",
+			"UUID": "com.sylv.waveflow-deck.playpause",
+			"Icon": "imgs/actions/playpause/icon",
+			"Tooltip": "Alterna entre tocar e pausar o Waveflow.",
+			"PropertyInspectorPath": "ui/waveflow.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/playpause/key"
+				}
+			]
+		},
+		{
+			"Name": "Próxima",
+			"UUID": "com.sylv.waveflow-deck.next",
+			"Icon": "imgs/actions/next/icon",
+			"Tooltip": "Pula para a próxima faixa.",
+			"PropertyInspectorPath": "ui/waveflow.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/next/key"
+				}
+			]
+		},
+		{
+			"Name": "Anterior",
+			"UUID": "com.sylv.waveflow-deck.previous",
+			"Icon": "imgs/actions/previous/icon",
+			"Tooltip": "Volta para a faixa anterior.",
+			"PropertyInspectorPath": "ui/waveflow.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/previous/key"
+				}
+			]
+		},
+		{
+			"Name": "Volume",
+			"UUID": "com.sylv.waveflow-deck.volume",
+			"Icon": "imgs/actions/volume/icon",
+			"Tooltip": "Aumenta ou diminui o volume do Waveflow.",
+			"PropertyInspectorPath": "ui/volume.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/volume/key",
+					"Title": "Volume",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+	],
+	"Category": "Waveflow Deck",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Controle do Waveflow via MPD",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.sylv.waveflow-deck"
+}
